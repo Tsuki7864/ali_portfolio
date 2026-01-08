@@ -1,51 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ali's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
 
-</head>
-<body>
+  <body>
     <header>
-        <h1>Ali's Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <h1>Ali's Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Insert Text</p>
-        </section>
+      <section id="about" class="about-section">
+        <div class="about-image">
+          <img src="../images/temp-profilepic.jpg" alt="Profile photo" />
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            Hi, I am Ali India and I am an aspiring Software Engineer who is
+            currently studying Computer Science at Cambridge Rindge and Latin in
+            Cambirdge Massachusetts. My Hobbies include Reading, playing video
+            games, and hanging out with my friends.
+          </p>
+        </div>
+      </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Scratch</li>
-                <li>HTML/CSS</li>
-                <li>JS</li>
-            </ul>
-        </section>
+      <section id="skills">
+        <h2>Skills</h2>
 
-        <section id="projects">
-            <h2>Skills</h2>
-            <ul>
-                <li>Project1</li>
-                <li>Project2t</li>
-                <li>Project3</li>
-                <li>Project4</li>
-            </ul>
-        </section>
+        <div class="skill-grid">
+          <input type="checkbox" id="skill1" />
+          <label for="skill1" class="skill-card">
+            <img
+              src="../images/scratch.svg"
+              alt="Scratch logo"
+              class="skill-icon"
+            />
+            <h3>Scratch</h3>
+            <p class="skill-detail">
+              A free visual programming language and online community from MIT
+              that teaches coding basics using blocks to create interactive
+              stories, games, and animations.
+            </p>
+            <footer>Intro to Computer Science, Freshman Year</footer>
+          </label>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>You can reach me at
+          <input type="checkbox" id="skill2" />
+          <label for="skill2" class="skill-card">
+            <img
+              src="../images/python.png"
+              alt="Python logo"
+              class="skill-icon"
+            />
+            <h3>Python</h3>
+            <p class="skill-detail">
+              A popular, high-level, general-purpose programming language known
+              for its simple and readable syntax, making it beginner-friendly.
+            </p>
+            <footer>AP Computer Science Principles, Sophomore Year</footer>
+          </label>
+
+          <input type="checkbox" id="skill3" />
+          <label for="skill3" class="skill-card">
+            <img
+              src="../images/html:css.png"
+              alt="HTML/CSS logo"
+              class="skill-icon"
+            />
+            <h3>HTML/CSS</h3>
+            <p class="skill-detail">
+              The core technologies used to build and style web pages by adding
+              interactivity and dynamic behavior to create the rich, interactive
+              websites we use today.
+            </p>
+            <footer>Computer Scienece 2, Junior Year</footer>
+          </label>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects (To be added)</h2>
+        <ul>
+          <li>Project 1...</li>
+          <li>Project 2...</li>
+          <li>Project 3...</li>
+          <li>Project 4...</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h3>Contact</h3>
+        <p>
+          <a href="mailto:27aindia@cpsd.us" class="email-link">
+            <ion-icon name="mail-outline"></ion-icon>
+            27aindia@cpsd.us
+          </a>
+        </p>
+      </section>
     </main>
-</body>
+    <footer class="copyright">Copyright © Ali India 2025</footer>
+  </body>
 </html>

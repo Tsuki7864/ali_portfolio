@@ -1,30 +1,137 @@
 html {
   scroll-behavior: smooth;
-  background-color: rgb(173, 176, 250);
+  background-color: rgb(63, 166, 239);
   color: aliceblue;
 }
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 0;
+}
+header {
+  background-color: #6b95ea;
+  padding: 1.5rem 2rem;
+
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  white-space: nowrap;
 }
 
 nav {
-  background-color: #4a47a3;
+  background-color: #6b95ea;
   padding: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: left;
-  position: sticky;
-  opacity: 0.7;
 }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 1rem;
-  opacity: 1;
-  border-radius: 5%;
-  background-color: #a0bef1;
+  background-color: #9abcf3;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 20px;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.about-image img {
+  width: 25vw;
+  height: 25vw;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-grid input {
+  display: none;
+}
+
+.skill-card {
+  background-color: #6b95ea;
+  padding: 1.5rem;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  text-align: center;
+}
+.skill-icon {
+  width: 15vw;
+  height: 10vw;
+  object-fit: contain;
+  margin-bottom: 0.8rem;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.skill-detail {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+#skill1:checked + .skill-card .skill-detail,
+#skill2:checked + .skill-card .skill-detail,
+#skill3:checked + .skill-card .skill-detail {
+  max-height: 100px;
+  margin-top: 1rem;
+}
+
+.copyright {
+  text-align: center;
+  padding: 1rem;
+  background-color: #6b95ea;
+  color: white;
+}
+.email-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.email-link ion-icon {
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 0.4rem;
+}
+
+.email-link:hover ion-icon {
+  color: #c8c8c8;
 }
